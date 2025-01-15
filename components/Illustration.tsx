@@ -14,7 +14,7 @@ export const Illustration: React.FC<IllustrationProps> = ({ src, alt }) => {
       transition={{ duration: 1 }}
       className="absolute inset-0 w-full h-full"
     >
-      <Image src={src} alt={alt} layout="fill" objectFit="cover" />
+      <Image src={src || "/placeholder.svg"} alt={alt} layout="fill" objectFit="cover" />
     </motion.div>
   )
 }
